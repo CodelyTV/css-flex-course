@@ -1,9 +1,12 @@
 .gallery {
   display: flex;
   gap: 1rem;
-  flex-direction: row;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+
+  flex-flow: row wrap;
 
   .card {
-    min-width: 15rem;
+    width: 40%;
   }
 }
