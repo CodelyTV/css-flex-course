@@ -2,12 +2,17 @@
   display: flex;
   gap: 1rem;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  height: 100vh;
-  align-content: space-around;
+  align-items: center;
 
   .card {
-    width: 40%;
+    width: 20rem;
+  }
+
+  .card:nth-child(1) {
+    align-self: flex-end;
+  }
+
+  .card:nth-child(3) {
+    align-self: stretch;
   }
 }
