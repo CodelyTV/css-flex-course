@@ -5,7 +5,25 @@
 
   .card {
     width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &__img {
+      order: -2;
+    }
+
+    &__category {
+      order: -1;
+      align-self: flex-end;
+    }
   }
 
+  .card:nth-child(1) {
+    order: 1;
+  }
 
+  .card:nth-child(3) {
+    order: 3;
+  }
 }
