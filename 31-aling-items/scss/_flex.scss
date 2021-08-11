@@ -1,0 +1,13 @@
+.gallery {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 100vh;
+  align-content: space-around;
+
+  .card {
+    width: 40%;
+  }
+}
