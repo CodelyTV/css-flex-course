@@ -4,5 +4,16 @@
   flex-direction: row;
 
   .card {
+    flex: 2 1 20rem;
+    // flex-grow: 1;
+    // flex-shrink: 1;
+    flex-basis: 20rem;
+  }
+
+  .card:nth-child(2) {
+    flex: 1 2 20rem;
+    // flex-grow: 1;
+    // flex-shrink: 2;
+    flex-basis: 20rem;
   }
 }
