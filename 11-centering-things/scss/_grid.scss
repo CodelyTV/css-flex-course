@@ -1,0 +1,14 @@
+.grid {
+  .center {
+    height: 400px;
+    border-top: 1px solid tomato;
+    border-bottom: 1px solid tomato;
+
+    display: grid;
+
+    .grid-item {
+      align-self: center;
+      justify-self: center;
+    }
+  }
+}
