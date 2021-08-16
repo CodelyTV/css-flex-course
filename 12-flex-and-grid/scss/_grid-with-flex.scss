@@ -1,0 +1,62 @@
+.grid-layout {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 75px auto 100px 75px;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "ads ads"
+    "footer footer";
+
+  @media screen and (min-width: 40rem) {
+    grid-template-columns: 200px auto 150px;
+    grid-template-rows: 75px auto 75px;
+    grid-template-areas:
+      "header header header"
+      "sidebar content ads"
+      "footer footer footer";
+  }
+
+  .header {
+    grid-area: header;
+    background-color: tomato;
+    text-align: center;
+    line-height: 75px;
+    font-size: 2rem;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    background-color: tomato;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .ads {
+    grid-area: ads;
+    background-color: tomato;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .footer {
+    grid-area: footer;
+    background-color: tomato;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 75px;
+  }
+
+  .content {
+    grid-area: content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    article {
+      flex: 1;
+      min-width: 10rem;
+    }
+  }
+}
