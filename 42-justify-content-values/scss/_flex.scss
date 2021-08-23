@@ -1,6 +1,11 @@
 .gallery {
   display: flex;
   gap: 1rem;
-  flex-direction: row-reverse;
-  justify-content: end;
+  flex-direction: column;
+  direction: rtl;
+  align-items: self-end;
+
+  .card:nth-child(2) {
+    direction: ltr;
+  }
 }
