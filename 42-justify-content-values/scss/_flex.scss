@@ -1,4 +1,6 @@
 .gallery {
   display: flex;
   gap: 1rem;
+  flex-direction: row-reverse;
+  justify-content: end;
 }
