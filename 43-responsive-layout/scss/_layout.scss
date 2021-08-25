@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  .menu {
+    flex-basis: 100%;
+
+    @media screen and (min-width: 40rem) {
+      flex-basis: 25%;
+    }
+
+    @media screen and (min-width: 58rem) {
+      flex-basis: 20%;
+    }
+  }
+
+  .gallery {
+    flex: 1;
+  }
+}
