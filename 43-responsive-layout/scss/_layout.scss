@@ -4,18 +4,26 @@
   gap: 1rem;
 
   .menu {
-    flex-basis: 100%;
-
-    @media screen and (min-width: 40rem) {
-      flex-basis: 25%;
-    }
-
-    @media screen and (min-width: 58rem) {
-      flex-basis: 20%;
-    }
+    flex-basis: 20rem;
+    flex-grow: 1;
   }
 
   .gallery {
-    flex: 1;
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 60%;
+  }
+}
+
+.menu {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+
+    li {
+      flex-grow: 1;
+      flex-basis: 20rem;
+    }
   }
 }
