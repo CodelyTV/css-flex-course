@@ -1,0 +1,15 @@
+.gallery.inline_block {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  .card {
+    flex: 1 1 40%;
+    height: 25rem;
+    display: inline-block;
+
+    @supports (display: flex) {
+      height: auto;
+    }
+  }
+}

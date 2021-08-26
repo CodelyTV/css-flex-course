@@ -1,0 +1,15 @@
+.gallery.float {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  .card {
+    flex: 1 1 40%;
+    float: left;
+    height: 25rem;
+
+    @supports (display: flex) {
+      height: auto;
+    }
+  }
+}
