@@ -1,0 +1,52 @@
+.courses {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  align-content: center;
+
+  @media screen and (min-width: 50rem) {
+    flex-wrap: wrap;
+    height: 1500px;
+
+    &::before,
+    &::after {
+      content: "";
+      flex-basis: 100%;
+      width: 0;
+      order: 2;
+    }
+  }
+
+  .course-card {
+    width: 80%;
+
+    &__image {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__title {
+      color: #238b53;
+    }
+
+    @media screen and (min-width: 50rem) {
+      width: 28%;
+
+      &:nth-child(3n + 1) {
+        order: 1;
+      }
+
+      &:nth-child(3n + 2) {
+        order: 2;
+      }
+
+      &:nth-child(3n) {
+        order: 3;
+      }
+    }
+  }
+}
