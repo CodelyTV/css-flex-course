@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  max-width: 72rem;
+  line-height: 1.8;
+  margin: 0 auto;
+}
+
+a {
+  color: #2d5d7b;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: #457eac;
+  }
+}
+
+.container {
+  padding: 1rem;
+}
+
+.gallery {
+  margin-top: 1rem;
+}

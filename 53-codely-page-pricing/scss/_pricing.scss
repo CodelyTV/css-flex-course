@@ -1,0 +1,80 @@
+.pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+
+  @media screen and (min-width: 50rem) {
+    flex-direction: row;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .pricing-tier {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+
+    @media screen and (min-width: 50rem) {
+      flex-direction: column;
+    }
+
+    &__title {
+      background-color: #181818;
+      flex: 1;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      text-align: center;
+
+      h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+        font-size: 2rem;
+      }
+    }
+
+    &__subscribe {
+      color: black;
+      background-color: #69e081;
+      align-self: stretch;
+      border: none;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+
+      &:hover {
+        cursor: pointer;
+        background-color: transparentize($color: #69e081, $amount: 0.5);
+      }
+    }
+
+    &__perks {
+      flex: 1;
+      align-self: center;
+      padding: 1rem;
+
+      ul {
+        padding: 0;
+
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+
+    @media screen and (min-width: 50rem) {
+      &:nth-child(2) {
+        order: -1;
+      }
+    }
+  }
+}

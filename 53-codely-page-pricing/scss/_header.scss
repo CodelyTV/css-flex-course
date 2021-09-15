@@ -1,0 +1,55 @@
+.header {
+  background-color: #181818;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  &__menu {
+    flex-basis: 100%;
+    order: 1;
+
+    @media screen and (min-width: 60rem) {
+      order: 0;
+      flex-basis: auto;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+      margin: 0;
+
+      li {
+        flex: 1;
+        list-style-type: none;
+        text-align: center;
+        padding: 0.25rem 1rem;
+      }
+    }
+  }
+
+  &__subscribe {
+    border: 1px solid #69e081;
+    border-radius: 0.25rem;
+    padding: 0.25rem 1rem;
+  }
+
+  &__image {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: none;
+      max-height: 2.3em;
+    }
+  }
+}
